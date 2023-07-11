@@ -51,5 +51,5 @@ studentsList.forEach((student) => {
   table.appendChild(row);
 });
 
-// Append the table to the document body
+// Appends table to body
 document.body.appendChild(table);
