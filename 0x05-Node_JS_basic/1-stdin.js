@@ -4,12 +4,7 @@ process.stdin.on('readable', () => {
   const chunk = process.stdin.read();
 
   if (chunk) {
-    const name = chunk.toString().trim(); // Trim the newline character
-    if (name === '') {
-      process.stdout.write('Your name is: INPUT\n');
-    } else {
-      process.stdout.write(`Your name is: ${name}\n`);
-    }
+    process.stdout.write(`Your name is: ${chunk}`);
   }
 });
 
